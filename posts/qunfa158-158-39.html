@@ -1,0 +1,41 @@
+<!DOCTYPE html><html lang="zh-CN"><head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog</title>
+    <script type="module" crossorigin="" src="/assets/app-DKwPSaMZ.js"></script>
+    <link rel="stylesheet" crossorigin="" href="/assets/app-DbUfv6WT.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="flex min-h-screen flex-col bg-white"><div class="hidden bg-ink text-white sm:block"><div class="mx-auto w-full max-w-[1200px] px-4 sm:px-6 flex items-center justify-end gap-4 py-1.5 text-xs"><!--[--><span class="opacity-80">老用户？</span><a href="/pages/legacy.html#download" class="transition-colors hover:text-growth-light">旧版下载</a><span class="opacity-40">·</span><a href="/pages/legacy.html#license" class="transition-colors hover:text-growth-light">授权查询</a><!--]--></div></div><header class="sticky top-0 z-50 border-b border-gray-100 bg-white/90 backdrop-blur" data-v-c127da81=""><div class="mx-auto w-full max-w-[1200px] px-4 sm:px-6 flex h-16 items-center justify-between" data-v-c127da81=""><!--[--><a href="/" class="router-link-active flex items-center gap-2 font-bold text-ink" data-v-c127da81=""><span class="inline-flex h-8 w-8 items-center justify-center rounded-lg bg-primary text-sm text-white" data-v-c127da81="">158</span><span class="text-lg" data-v-c127da81="">智能营销云</span></a><nav class="hidden items-center gap-7 text-sm font-medium text-ink-soft md:flex" data-v-c127da81=""><!--[--><a href="/" class="router-link-active transition-colors hover:text-primary" data-v-c127da81="">首页</a><a href="/pages/capabilities.html" class="transition-colors hover:text-primary" data-v-c127da81="">产品能力</a><a href="/pages/solutions.html" class="transition-colors hover:text-primary" data-v-c127da81="">解决方案</a><a href="/pages/cases.html" class="transition-colors hover:text-primary" data-v-c127da81="">客户案例</a><a href="/pages/about.html" class="transition-colors hover:text-primary" data-v-c127da81="">关于我们</a><a href="/pages/legacy.html" class="transition-colors hover:text-primary opacity-70 hover:opacity-100" data-v-c127da81="">老用户专区</a><!--]--></nav><div class="hidden md:block" data-v-c127da81=""><a href="/pages/capabilities.html" class="inline-flex items-center justify-center rounded-xl font-semibold transition-all duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary/40 min-h-[44px] px-4 text-sm min-h-[40px] bg-primary text-white shadow-card hover:bg-primary-light hover:shadow-card-hover" data-v-c127da81=""><!--[-->免费体验<!--]--></a></div><button class="inline-flex h-11 w-11 items-center justify-center rounded-lg text-ink md:hidden" aria-label="打开菜单" data-v-c127da81=""><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" data-v-c127da81=""><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" data-v-c127da81=""></path></svg></button><!--]--></div><!----></header><main class="flex-1"><article class="post" data-v-e1378989=""><div class="mx-auto w-full max-w-[1200px] px-4 sm:px-6" data-v-e1378989=""><!--[--><div class="mx-auto max-w-3xl py-12 sm:py-16" data-v-e1378989=""><!--[--><h1 class="text-3xl font-bold text-ink sm:text-4xl" data-v-e1378989="">EDM邮件内容设计标准及规范</h1><p class="mt-2 text-sm text-ink-soft" data-v-e1378989="">2013-12-04 · 158软件</p><div class="post-content mt-6" data-v-e1378989=""><h1>EDM邮件内容设计标准及规范</h1>
+<p>1,图片样式与背景图片颜色使用<br>
+模板尽量不要使用背景图片。背景图片在某些邮件客户端或或web界面中默认不显示。模板中每张图的地址都一定要用绝对地址，否则会不显示；每张图都要指定alt属性，可以在图片被拦截的时候显示图片的内容；每张图都要指定width宽度、height高度，在图片被拦截的时候，不会因图片大小无法读取而被打乱布局。body中不要设定背景色，不然在转发邮件的时候，转发人写的信息背景色都会变为被转发邮件的背景色，影响浏览。如果一定要给邮件模板设定整体背景色，请在模板文件最外面加一个table，设定此table的背景色。<br>
+在切割模板的时候，要注意限制图片的大小和数量，不要为了效果使图片过大，会使邮件接收者打开过于缓慢，甚至直接关闭邮件。更不要完全把模板切为图片形式，那样会在图片被拦截的时候使用户看不到内容，并且很可能会直接被邮件运营商或邮件客户端认定为垃圾邮件。<br>
+2,不要使用div，使用最简单的嵌套table定位<br>
+Div+css是近几年新兴的web2.0定位方式，这种方式不适合在邮件模板切割中使用，不同邮件客户端或在线浏览器对css模型解释不尽相同，会造成错位或布局混乱等问题。同时也不要使用单一table重复多次colspan，可能会被邮件客户端判断为结构过于复杂，归类为垃圾邮件；同时也容易被打乱布局而影响用户浏览。<br>
+3,模板编码语言选择<br>
+模板编码设定与使用的发送软件有关，一般来说，utf-8为较常用的选择，错误的编码会造成用户浏览的时候出现乱码；<br>
+4,css样式编写<br>
+不要使用外部样式表引用，将样式表写入模板内部，如果模板有完全相同样式的列表型文本，可以吧样式表写在页面内<style></style> 中引用，但缺点是在邮件转发过程中经过web编辑器或邮件客户端的编辑，<style></style>被去掉，导致此列表样式变形。这种页面内引用的方式却能节省大量代码，使代码与内容比降低，同时也缩减了模板文件大小，有利于模板评分。<br>
+5,动画与互动元素的处理<br>
+可以使用简单的gif动画来表达某些需要明显突出的要素，但要控制gif文件的大小，不要影响整封邮件的下载浏览速度；不要使用flash动画或JavaScript Active等，前些年邮件病毒泛滥，大部分邮件运营商都已经屏蔽了这些元素。<br>
+6,模板html标签规则<br>
+尽量不要使用提交表单；padding和margin标签：table中，某些邮件客户端或web界面（如Gmail），对浮动的标签(padding、margin等)支持很差，所以尽量不要使用；float浮动标签：某些邮件客户端不支持浮动属性，尽量避免使用。在页面内调用<style></style>的情况下，尽量不要使用</p><h2>、<ul>、<li>、<p>、</p><ol>等有默认样式的标签，防止<style></style>被隔离时页面布局混乱。<br>
+7,邮件附件夹带<br>
+邮件一定不要夹带附件，发送大量附件会占用大量珍贵的网络带宽，切大部分附件用户根本不会打开，这部分占用的带宽基本都是浪费的。带有附件的邮件有很大可能被用户认为是病毒，对品牌产生不良影响。在模板上设置下载按钮，链接到网站上下载页面，还可以给网站带来一部分流量，何乐而不为。<br>
+8,使用所见即所得工具，在制作完成后手动优化代码<br>
+使用主流所见即所得工具可以节省大量时间、提高工作效率，但所见即所得工具生成的代码会有许多垃圾代码掺杂其中，最好在制作完成后手动优化。<br>
+9,图片与文本链接规则<br>
+模板中所有链接，都必须使用绝对路径；链接长度不能超过255个字符，不能存在空格，也不能有中文字符，否则可能会导致连接无法追踪；图片链接不要使用标签，否则可能被邮件客户端判定为垃圾邮件，甚至被邮件运营商直接屏蔽。模板中文本文字不能使用过大的字体，否则可能会被邮件客户端判定为垃圾邮件。<p></p>
+</ol></li></ul></h2></div><!--]--></div><!--]--></div></article></main><footer class="bg-ink text-gray-300"><div class="mx-auto w-full max-w-[1200px] px-4 sm:px-6 grid gap-10 py-12 sm:grid-cols-2 lg:grid-cols-4"><!--[--><div><div class="mb-3 flex items-center gap-2 text-lg font-bold text-white"><span class="inline-flex h-8 w-8 items-center justify-center rounded-lg bg-primary text-sm">158</span> 智能营销云 </div><p class="text-sm leading-relaxed">AI 邮件营销工作台——你的通道你掌控，AI 让你发得更好。发送留在你的本地客户端，能力由 AI 提供。</p></div><div><h4 class="mb-3 text-sm font-semibold text-white">产品</h4><ul class="space-y-2 text-sm"><li><a href="/pages/capabilities.html" class="transition-colors hover:text-growth-light">产品能力</a></li><li><a href="/pages/solutions.html" class="transition-colors hover:text-growth-light">解决方案</a></li><li><a href="/pages/cases.html" class="transition-colors hover:text-growth-light">客户案例</a></li></ul></div><div><h4 class="mb-3 text-sm font-semibold text-white">资源</h4><ul class="space-y-2 text-sm"><li><a href="/pages/about.html" class="transition-colors hover:text-growth-light">关于我们</a></li><li><a href="/pages/compliance.html" class="transition-colors hover:text-growth-light">合规说明</a></li><li><a href="/pages/legacy.html" class="transition-colors hover:text-growth-light">老用户专区</a></li><li><a href="/sitemap.html" class="transition-colors hover:text-growth-light">站点地图</a></li></ul></div><div><h4 class="mb-3 text-sm font-semibold text-white">联系我们</h4><address class="space-y-1 text-sm not-italic leading-relaxed"><p>上海长宁协和路 787 号 D 北 208</p><p>邮编 200335</p><p><a href="https://wwww.abot.cn" target="_blank" rel="noopener" class="transition-colors hover:text-growth-light">延誉宝</a></p></address></div><!--]--></div><div class="border-t border-white/10"><div class="mx-auto w-full max-w-[1200px] px-4 sm:px-6 flex flex-col gap-2 py-4 text-xs text-gray-400 sm:flex-row sm:items-center sm:justify-between"><!--[--><span>© 2026 158软件　</span><div class="flex flex-wrap gap-4"><a href="/pages/compliance.html" class="transition-colors hover:text-gray-200">合规说明</a><a href="/pages/legacy.html" class="transition-colors hover:text-gray-200">老用户专区</a><a href="https://wwww.abot.cn" target="_blank" rel="noopener" class="transition-colors hover:text-gray-200">延誉宝</a></div><!--]--></div></div><div style="display:none;"><script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement(&quot;script&quot;);
+  hm.src = &quot;https://hm.baidu.com/hm.js?ec825788c11ff68e02d8d06b4ef4f506&quot;;
+  var s = document.getElementsByTagName(&quot;script&quot;)[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script></div></footer></div></div>
+  
+
+</body></html>
