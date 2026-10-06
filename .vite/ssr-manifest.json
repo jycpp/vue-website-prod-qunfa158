@@ -1,6 +1,7 @@
 {
   "\u0000plugin-vue:export-helper": [],
   "\u0000vite/modulepreload-polyfill.js": [],
+  "../../../../../favicon.svg": [],
   "index.html": [],
   "node_modules/@unhead/dom/dist/index.mjs": [],
   "node_modules/@unhead/shared/dist/index.mjs": [],
@@ -93,7 +94,7 @@
   "src/App.vue": [],
   "src/components/SiteFooter.vue": [],
   "src/components/SiteHeader.vue": [],
-  "src/components/SiteHeader.vue?vue&type=style&index=0&scoped=c127da81&lang.css": [],
+  "src/components/SiteHeader.vue?vue&type=style&index=0&scoped=d9c327a8&lang.css": [],
   "src/components/TopBar.vue": [],
   "src/components/ui/Button.vue": [],
   "src/components/ui/Card.vue": [],
